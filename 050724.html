@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table layout</title>
+    <style>
+        table,
+        tr,
+        td {
+            margin-left: 200px;
+            border: 2px solid;
+            border-collapse: collapse;
+            height: 10vh;
+            width: 30vw;
+        }
+
+        .h1 {
+            text-align: center;
+            text-shadow: 2px 2px 3px red;
+        }
+
+        .p1 {
+            background-image: linear-gradient(red, white, green);
+            text-align: center;
+            text-decoration: line-through;
+            text-shadow: 2px 2px 4px;
+        }
+
+        .tab2 {
+            margin-top: 10px;
+        }
+
+       
+        @media screen and (min-width:320px) and (max-width:420px) {
+         .tab2,
+            .tab3 {
+                display: none
+            }
+
+        }
+        @media screen and (max-width:319px) {
+         .tab1,
+            .tab3 {
+                display: none
+            }
+
+        }
+        @media screen and (min-width:421px) {
+         .tab1,
+            .tab2 {
+                display: none
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="h1">GRADIENT AND ITS PROPERTIES</h1>
+    <hr>
+    <table class="tab1">
+        <tr>
+            <td style="background-image: linear-gradient(red,blue,green);">linear gradient</td>
+            <td style="background-image: linear-gradient(100deg,purple,white,maroon,black);">linear gradient with
+                angle</td>
+        </tr>
+        <tr>
+            <td style="background-image: radial-gradient(brown,orange,yellow);">radial gradient</td>
+            <td style="background-image: conic-gradient(
+                red, yellow, green);">conic-gradient</td>
+        </tr>
+    </table>
+
+    <table class="tab2">
+        <tr>
+            <td style="background-image: repeating-linear-gradient(red 10%,green 40%,brown 30%);">
+                repeating-linear-gradient</td>
+            <td style="background-image: repeating-radial-gradient(black 10%,grey 20%,blue 30%,pink 20%,gold 20%);">
+                repeating-radial-gradient</td>
+            <td style="background-image: linear-gradient(to top,maroon,green,grey,white);">linear-gradient to top
+            </td>
+        </tr>
+        <tr>
+            <td style="background-image: linear-gradient(to right,blue,darkgreen,chocolate);">linear-gradient to
+                right</td>
+            <td style="background-image: radial-gradient(ellipse,green,maroon);">ellipse</td>
+            <td style="background-image: repeating-conic-gradient(violet 0deg,orange 90deg,yellow 90deg,black 90deg);">
+                repeating conic</td>
+        </tr>
+        <tr>
+            <td style="background-image: linear-gradient(90deg,green,orange,brown);"></td>
+            <td style="background-image:radial-gradient(black,blue,green) ;"></td>
+            <td style="background-image: conic-gradient(purple,pink);"></td>
+        </tr>
+    </table>
+
+    <table class="tab3">
+        <br>
+        <tr>
+            <td style="background-color: aquamarine">
+                <p class="p1">I am vinay</p>
+            </td>
+            <td style="background-color: blueviolet;"></td>
+            <td style="background-color:red;"></td>
+            <td style="background-color: bisque;"></td>
+        </tr>
+        <tr>
+            <td><img src="https://www.w3schools.com/css/paris.jpg" height="100%" width="100%" alt="paris"></td>
+            <td><img src="https://www.w3schools.com/css/img_5terre.jpg" height="100px" width="100%" alt="loc"></td>
+            <td style="background-image:linear-gradient(red, white,green);"></td>
+            <td style="background-color: cadetblue;"></td>
+        </tr>
+        <tr>
+            <td style="background-color: cornflowerblue;"></td>
+            <td style="background-color: coral;"></td>
+            <td style="background-color: crimson;"></td>
+            <td style="background-color: aqua;"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
